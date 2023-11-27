@@ -6,7 +6,7 @@
 /*   By: dhorvath <dhorvath@hive.student.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 12:22:29 by dhorvath          #+#    #+#             */
-/*   Updated: 2023/11/13 16:46:42 by dhorvath         ###   ########.fr       */
+/*   Updated: 2023/11/22 22:22:35 by dhorvath         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 # include <stdlib.h>
 # include "ft_printf.h"
 # include "get_next_line.h"
-
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);

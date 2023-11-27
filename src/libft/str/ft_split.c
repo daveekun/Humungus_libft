@@ -6,7 +6,7 @@
 /*   By: dhorvath <dhorvath@hive.student.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 20:04:18 by dhorvath          #+#    #+#             */
-/*   Updated: 2023/11/07 21:47:48 by dhorvath         ###   ########.fr       */
+/*   Updated: 2023/11/27 16:43:44 by dhorvath         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (0);
 	c_word = 0;
-	res = malloc((count_words(s, c) + 1) * sizeof(char *));
+	res = ft_calloc((count_words(s, c) + 1), sizeof(char *));
 	if (!res)
 		return ((char **) 0);
 	i = 0;
@@ -59,8 +59,9 @@ char	**ft_split(char const *s, char c)
 			i++;
 		if (i != old_i)
 			res[c_word++] = ft_new_sub(s, old_i, i - old_i, res);
+		if (!res[c_word - 1])
+			break ;
 	}
-	res[c_word] = (char *)0;
 	return (res);
 }
 

@@ -6,12 +6,12 @@
 /*   By: dhorvath <dhorvath@hive.student.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 14:47:39 by dhorvath          #+#    #+#             */
-/*   Updated: 2023/11/04 17:55:29 by dhorvath         ###   ########.fr       */
+/*   Updated: 2023/11/14 14:42:41 by dhorvath         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
-#include "../includes/libft.h"
+#include "ft_printf.h"
+#include "libft.h"
 
 int	print_arg_char(int c)
 {
